@@ -1,0 +1,44 @@
+{
+  "name": "digital-root",
+  "version": "0.0.0",
+  "description": "Calculate the digital root of a number.",
+  "license": "MIT",
+  "repository": "gillstrom/digital-root",
+  "author": {
+    "name": "Andreas Gillström",
+    "email": "andreasgillstrom@gmail.com",
+    "url": "github.com/gillstrom"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && mocha"
+  },
+  "xo": {
+    "envs": ["mocha"]
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "digit",
+    "digital",
+    "integer",
+    "math",
+    "number",
+    "repeated",
+    "root",
+    "sum"
+  ],
+  "dependencies": {
+    "is-positive": "^3.0.0",
+    "math-sum": "^1.0.0",
+    "num-arr": "^1.0.1",
+    "number-is-integer": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "xo": "^0.6.1"
+  }
+}
