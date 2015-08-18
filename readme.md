@@ -1,6 +1,6 @@
 # digital-root [![Build Status](https://travis-ci.org/gillstrom/digital-root.svg?branch=master)](https://travis-ci.org/gillstrom/digital-root)
 
-> Calculate the (digital root)[https://en.wikipedia.org/wiki/Digital_root] of a number.
+> Calculate the [digital root](https://en.wikipedia.org/wiki/Digital_root) of a number.
 
 
 ## Install
