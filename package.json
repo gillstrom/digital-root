@@ -34,6 +34,7 @@
     "sum"
   ],
   "dependencies": {
+    "digit-sum": "^1.0.0",
     "is-positive": "^3.0.0",
     "math-sum": "^1.0.0",
     "num-arr": "^1.0.1",

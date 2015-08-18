@@ -1,8 +1,7 @@
 'use strict';
 var numberIsInteger = require('number-is-integer');
 var isPositive = require('is-positive');
-var mathSum = require('math-sum');
-var numArr = require('num-arr');
+var digitSum = require('digit-sum');
 
 module.exports = function (val) {
 	if (!numberIsInteger(val) || !isPositive(val)) {
@@ -10,7 +9,7 @@ module.exports = function (val) {
 	}
 
 	while (val.toString().length !== 1) {
-		val = mathSum(numArr(val));
+		val = digitSum(val);
 	}
 
 	return val;
