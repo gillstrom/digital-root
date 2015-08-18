@@ -36,12 +36,10 @@
   "dependencies": {
     "digit-sum": "^1.0.0",
     "is-positive": "^3.0.0",
-    "math-sum": "^1.0.0",
-    "num-arr": "^1.0.1",
     "number-is-integer": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
-    "xo": "^0.6.1"
+    "xo": "*"
   }
 }
