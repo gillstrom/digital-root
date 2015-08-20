@@ -36,7 +36,8 @@
   "dependencies": {
     "digit-sum": "^1.0.0",
     "is-positive": "^3.0.0",
-    "number-is-integer": "^1.0.0"
+    "number-is-integer": "^1.0.0",
+    "number-length": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
