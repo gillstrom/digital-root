@@ -1,10 +1,9 @@
-'use strict';
-var assert = require('assert');
-var digitalRoot = require('./');
+import test from 'ava';
+import m from './';
 
-it('Should work', function () {
-	assert.strictEqual(digitalRoot(65536), 7);
-	assert.strictEqual(digitalRoot(1853), 8);
-	assert.strictEqual(digitalRoot(2035), 1);
-	assert.strictEqual(digitalRoot(5), 5);
+test(t => {
+	t.is(m(65536), 7);
+	t.is(m(1853), 8);
+	t.is(m(2035), 1);
+	t.is(m(5), 5);
 });
