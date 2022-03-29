@@ -10,5 +10,5 @@ export default function digitalRoot(value) {
 	}
 
 	value %= 9;
-	return value;
+	return (value === 0) ? 9 : value;
 }
