@@ -1,17 +1,14 @@
-'use strict';
-var numberIsInteger = require('number-is-integer');
-var numberLength = require('number-length');
-var isPositive = require('is-positive');
-var digitSum = require('digit-sum');
+// 'use strict';
+// let numberIsInteger = require('number-is-integer');
+// let isPositive = require('is-positive');
+import isPositive from 'is-positive';
+import numberIsInteger from 'number-is-integer';
 
-module.exports = function (val) {
-	if (!numberIsInteger(val) || !isPositive(val)) {
+export default function digitalRoot(value) {
+	if (!numberIsInteger(value) || !isPositive(value)) {
 		throw new TypeError('Expected a positive number');
 	}
 
-	while (numberLength(val) !== 1) {
-		val = digitSum(val);
-	}
-
-	return val;
-};
+	value %= 9;
+	return (value === 0) ? 9 : value;
+}
