@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "digital-root",
   "version": "1.0.4",
   "description": "Calculate the digital root of a number.",
@@ -29,13 +30,11 @@
     "sum"
   ],
   "dependencies": {
-    "digit-sum": "^1.0.0",
     "is-positive": "^3.0.0",
-    "number-is-integer": "^1.0.0",
-    "number-length": "^1.0.0"
+    "number-is-integer": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "*",
+    "ava": "^4.1.0",
     "xo": "*"
   },
   "xo": {

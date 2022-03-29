@@ -1,5 +1,6 @@
 import test from 'ava';
-import m from './';
+import m from './index.js';
+// const m = require('./index');
 
 test(t => {
 	t.is(m(65536), 7);

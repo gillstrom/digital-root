@@ -1,13 +1,14 @@
-'use strict';
-var numberIsInteger = require('number-is-integer');
-var isPositive = require('is-positive');
+// 'use strict';
+// let numberIsInteger = require('number-is-integer');
+// let isPositive = require('is-positive');
+import isPositive from 'is-positive';
+import numberIsInteger from 'number-is-integer';
 
-module.exports = function (val) {
-	if (!numberIsInteger(val) || !isPositive(val)) {
+export default function digitalRoot(value) {
+	if (!numberIsInteger(value) || !isPositive(value)) {
 		throw new TypeError('Expected a positive number');
 	}
 
-	val = val % 9;
-
-	return val;
-};
+	value %= 9;
+	return value;
+}
