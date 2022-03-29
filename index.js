@@ -1,6 +1,6 @@
 'use strict';
 var numberIsInteger = require('number-is-integer');
-var numberLength = require('number-length');
+var isPositive = require('is-positive');
 
 module.exports = function (val) {
 	if (!numberIsInteger(val) || !isPositive(val)) {
